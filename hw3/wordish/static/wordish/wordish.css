@@ -1,0 +1,99 @@
+div {
+    margin: 3px;
+    padding: 5px;
+}
+
+form {
+    background-color: darkgray;
+    width: 500px;
+    padding: 26px;
+    margin: 3px;
+}
+
+.matrix {
+    margin-left: 22.5px;
+    width: 300px;
+    display: grid;
+    height: 375px;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2px;
+    grid-auto-rows: 60px;
+  }
+
+.white {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.gray {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.green {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.yellow{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.title {
+    color:black;
+    width: 400px;
+    font-size:36px;
+    font-family:sans-serif;
+    font-weight:bold;
+    background-color: lightgray;
+    margin: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+
+label {
+    font-size: large;
+    font-family: sans-serif;
+    width: 125px;
+}
+
+input {
+    font-size: large;
+    width: 150px;
+    height: 50px;
+}
+
+button {
+    font-size: x-large;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+input:focus {
+    background-color: pink;
+}
+
+button:focus {
+    background-color: pink;
+}

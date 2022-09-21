@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wordish</title>
+        <link rel="stylesheet" href="../static/wordish/wordish.css">
+    </head>
+
+    <body>
+        <div class="title" id="status">
+            {{status}}
+        </div>
+        <div class="matrix">
+            {% for _, row in matrix.items %}
+                {% for _, cell in row.items %}
+                    <div class="{{cell.color}}" 
+                        id="{{cell.id}}"> 
+                        {{cell.letter}} 
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <form class="guess" action="{{game_page}}" method="POST">
+            <label>Guess:</label>
+            <input id="guess_text" type="text" name="new-guess">
+            <button id="guess_button">Submit</button>
+            <input type="hidden" name="target" value="{{target}}">
+            <input type="hidden" name="guesses" value="{{guesses}}">
+            {% csrf_token %}
+        </form>
+      
+    </body>
+</html>

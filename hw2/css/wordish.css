@@ -1,0 +1,71 @@
+div {
+    margin: 3px;
+    padding: 5px;
+}
+
+form {
+    background-color: darkgray;
+    width: 500px;
+    padding: 26px;
+    margin: 3px;
+}
+
+.wrapper {
+    display: grid;
+    height: 450px;
+    grid-template-columns: repeat(5, 60px);
+    gap: 10px;
+    grid-auto-rows: 60px;
+  }
+
+.cell {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.title {
+    color:black;
+    width: 400px;
+    font-size:36px;
+    font-family:sans-serif;
+    font-weight:bold;
+    background-color: lightgray;
+    margin: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkgray;
+}
+
+
+label {
+    font-size: large;
+    font-family: sans-serif;
+    width: 125px;
+}
+
+input {
+    font-size: large;
+    width: 150px;
+    height: 50px;
+}
+
+button {
+    font-size: x-large;
+    background-color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+input:focus {
+    background-color: pink;
+}
+
+button:focus {
+    background-color: pink;
+}
